@@ -35,9 +35,6 @@ jobs:
       - name: Install dependencies
         run: pnpm i
 
-      - name: Disable Husky hooks
-        run: echo "HUSKY_SKIP_HOOKS=true" >> $GITHUB_ENV
-
       - name: Run formatters
         run: |
           pnpm lint
@@ -50,3 +47,4 @@ jobs:
         uses: cycjimmy/semantic-release-action@v4
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          HUSKY_SKIP_HOOKS: true
