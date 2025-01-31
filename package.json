@@ -47,6 +47,7 @@
     "husky": "9.1.7",
     "jiti": "2.4.2",
     "jsdom": "26.0.0",
+    "lint-staged": "15.4.3",
     "npm-run-all2": "7.0.2",
     "prettier": "3.4.2",
     "semantic-release": "24.2.1",
@@ -66,5 +67,17 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.{css,scss}": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ],
+    "*.{ts,vue,json}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
