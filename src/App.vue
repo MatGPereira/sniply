@@ -4,4 +4,4 @@
   <h1>Hello, world</h1>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
