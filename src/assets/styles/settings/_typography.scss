@@ -1,1 +1,24 @@
 @charset 'utf-8';
+
+:root {
+  --font-size-xs: 10px;
+  --font-size-s: 12px;
+  --font-size-m: 16px;
+  --font-size-l: 20px;
+  --font-size-xl: 26px;
+  --font-size-2xl: 32px;
+
+  --font-size-default: var(--font-size-m);
+  --line-height-default: 1.5;
+
+  // @see https://systemfontstack.com/
+  --font-family-sans-serif: -apple-system, blinkmacsystemfont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, ubuntu, roboto, noto, arial,
+    sans-serif;
+  --font-family-serif: times new roman, droid serif, times, source serif pro,
+    serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  --font-family-mono: menlo, consolas, monaco, liberation mono, lucida console,
+    monospace;
+
+  --font-family-oswald: oswald, var(--font-family-sans-serif);
+}

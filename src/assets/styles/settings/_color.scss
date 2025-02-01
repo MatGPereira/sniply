@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+:root {
+  --color-brand-hue: 180;
+  --color-brand-saturation: 66%;
+  --color-brand-lightness: 49%;
+
+  --color-brand: hsl(
+    var(--color-brand-hue) var(--color-brand-saturation)
+      var(--color-brand-lightness)
+  );
+  --color-secondary: hsl(
+    var(--color-brand-hue) var(--color-brand-saturation) 35%
+  );
+
+  --color-white: hsl(0 0% 98%);
+  --color-white-accent: hsl(0 0% 96%);
+
+  --color-black: hsl(0 0% 10%);
+  --color-black-accent: hsl(0 0% 16%);
+
+  --color-text: var(--color-black);
+  --color-background-document: var(--color-white);
+}
+
+:root.dark {
+  --color-text: var(--color-white);
+  --color-background-document: var(--color-black);
+}
