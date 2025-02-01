@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+
+import DefaultLayout from './common/presentation/layouts/DefaultLayout.vue';
+</script>
 
 <template>
-  <h1>Hello, world</h1>
+  <component :is="DefaultLayout">
+    <RouterView />
+  </component>
 </template>
 
 <style scoped lang="scss"></style>
