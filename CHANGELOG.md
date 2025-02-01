@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/MatGPereira/sniply/compare/v1.0.3...v1.0.4) (2025-02-01)
+
+
+### Bug Fixes
+
+* **release:** add plugin to change de version of package.json file ([32171c0](https://github.com/MatGPereira/sniply/commit/32171c00393de002691272fbf4e4d9838345a962))
+
 ## [1.0.3](https://github.com/MatGPereira/sniply/compare/v1.0.2...v1.0.3) (2025-02-01)
 
 
