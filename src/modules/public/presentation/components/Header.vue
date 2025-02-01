@@ -1,36 +1,41 @@
 <script setup lang="ts">
-import ButtonIcon from '@/common/presentation/components/Button/ButtonIcon.vue';
+import Button from '@/common/presentation/components/Button.vue';
+import Icon from '@/common/presentation/components/Icon.vue';
 import Logo from '@/common/presentation/components/Logo.vue';
 </script>
 
 <template>
   <header>
     <Logo />
-    <ButtonIcon>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="48px"
-        viewBox="0 -960 960 960"
-        width="48px"
-        style="color: var(--color-white)"
+    <Button>
+      <Icon
+        v-slot="{ size }"
+        :size="48"
       >
-        <path
-          d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
-        />
-      </svg>
-    </ButtonIcon>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          :height="`${size}px`"
+          viewBox="0 -960 960 960"
+          :width="`${size}px`"
+        >
+          <path
+            d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+          />
+        </svg>
+      </Icon>
+    </Button>
   </header>
 </template>
 
 <style scoped lang="scss">
 header {
+  align-items: center;
   background-color: transparent;
+  display: flex;
   inset-inline: 0;
-  padding: calc(var(--space-m) * 2) var(--space-m);
+  justify-content: space-between;
+  padding: calc(var(--space-m) * 2) calc(var(--space-m) * 1.5);
   position: fixed;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 </style>
