@@ -1,22 +1,7 @@
-<script setup lang="ts">
-import Button from '@/common/presentation/components/ui-kit/button/Button.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <Button
-      size="pill"
-      :loading="true"
-    >
-      Entrar
-    </Button>
-  </div>
+  <h1>main</h1>
 </template>
 
-<style scoped lang="scss">
-div {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-</style>
+<style scoped lang="scss"></style>
