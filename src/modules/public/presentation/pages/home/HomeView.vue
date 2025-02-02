@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import HeroSection from './components/HeroSection.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <HeroSection />
+  <h1></h1>
 </template>
 
 <style scoped lang="scss"></style>
