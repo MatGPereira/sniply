@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@use 'sass:map';
+
 $button-sizes: (
   sm: (
     padding: calc(var(--space-m) / 4) calc(var(--space-m) / 2),
@@ -69,12 +71,12 @@ $button-variants: (
   }
 
   @each $variant, $properties in $button-variants {
-    &--#{$variant} {
-      background-color: map-get($properties, background);
-      color: map-get($properties, color);
+    &--#{'' + $variant} {
+      background-color: map.get($properties, background);
+      color: map.get($properties, color);
 
       @include button-hover {
-        background-color: map-get($properties, hover-background);
+        background-color: map.get($properties, hover-background);
       }
 
       @if $variant == transparent {
@@ -82,8 +84,8 @@ $button-variants: (
       }
 
       @if $variant == none {
-        border-radius: map-get($properties, border-radius);
-        border: map-get($properties, border);
+        border-radius: map.get($properties, border-radius);
+        border: map.get($properties, border);
         padding: 0;
       }
     }

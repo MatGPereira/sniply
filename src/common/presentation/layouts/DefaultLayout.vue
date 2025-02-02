@@ -3,8 +3,14 @@ import Header from '../components/Header.vue';
 </script>
 
 <template>
-  <Header />
-  <slot />
+  <div class="l-layout">
+    <Header />
+    <slot />
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.l-layout {
+  overflow-x: hidden;
+}
+</style>
