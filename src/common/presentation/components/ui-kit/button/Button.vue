@@ -10,10 +10,10 @@ const {
   loading = false,
 } = defineProps<IButtonProps>();
 
-const buttonClass = ref<TButtonClasses[]>([
+const buttonClass = ref<readonly TButtonClasses[]>([
   `c-button--${size}`,
   `c-button--${variant}`,
-]);
+] as const);
 </script>
 
 <template>
@@ -58,6 +58,9 @@ button {
   }
 
   & span:last-child {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
     margin-top: 3px;
   }
 }

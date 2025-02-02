@@ -15,4 +15,8 @@ const { viewportWidth } = useResizeViewport();
   />
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+img {
+  max-width: 200px;
+}
+</style>

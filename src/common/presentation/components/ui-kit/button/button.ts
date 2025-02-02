@@ -1,6 +1,6 @@
 interface IButtonProps {
   size?: 'sm' | 'md' | 'lg' | 'full' | 'pill';
-  variant?: 'primary' | 'secondary' | 'transparent';
+  variant?: 'primary' | 'secondary' | 'transparent' | 'none';
   loading?: boolean;
 }
 

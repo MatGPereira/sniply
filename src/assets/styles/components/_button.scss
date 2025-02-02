@@ -39,6 +39,11 @@ $button-variants: (
     hover-background: transparent,
     color: var(--color-brand),
   ),
+  none: (
+    background: transparent,
+    border-radius: 0,
+    border: none,
+  ),
 );
 
 @mixin button-transition {
@@ -74,6 +79,12 @@ $button-variants: (
 
       @if $variant == transparent {
         border-color: currentColor;
+      }
+
+      @if $variant == none {
+        border-radius: map-get($properties, border-radius);
+        border: map-get($properties, border);
+        padding: 0;
       }
     }
   }

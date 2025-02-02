@@ -3,7 +3,9 @@ import { ref } from 'vue';
 import type { ISpinnerProps, TSpinnerClasses } from './spinner';
 
 const { size = 'sm' } = defineProps<ISpinnerProps>();
-const spinnerClass = ref<TSpinnerClasses[]>([`c-spinner--${size}`]);
+const spinnerClass = ref<readonly TSpinnerClasses[]>([
+  `c-spinner--${size}`,
+] as const);
 </script>
 
 <template>
