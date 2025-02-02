@@ -1,0 +1,91 @@
+@charset 'utf-8';
+
+$button-sizes: (
+  sm: (
+    padding: calc(var(--space-m) / 4) calc(var(--space-m) / 2),
+    max-width: 6.25rem,
+  ),
+  md: (
+    padding: calc(var(--space-m) / 2.666) calc(var(--space-m) / 1.333),
+    max-width: 12.5rem,
+  ),
+  lg: (
+    padding: calc(var(--space-m) / 2) var(--space-m),
+    max-width: 18.75rem,
+  ),
+  full: (
+    padding: calc(var(--space-m) / 2) var(--space-m),
+    width: 100%,
+  ),
+  pill: (
+    padding: calc(var(--space-m) / 2) var(--space-m),
+    border-radius: 50px,
+  ),
+);
+
+$button-variants: (
+  primary: (
+    background: var(--color-brand),
+    hover-background: var(--color-secondary),
+    color: var(--color-white),
+  ),
+  secondary: (
+    background: var(--color-secondary),
+    hover-background: var(--color-brand),
+    color: var(--color-white),
+  ),
+  transparent: (
+    background: transparent,
+    hover-background: transparent,
+    color: var(--color-brand),
+  ),
+);
+
+@mixin button-transition {
+  transition: all var(--transition-function-ease-in-expo)
+    var(--transition-duration-exit);
+}
+
+@mixin button-hover {
+  &:hover {
+    @content;
+  }
+}
+
+.c-button {
+  @include button-transition;
+
+  @each $size, $properties in $button-sizes {
+    &--#{$size} {
+      @each $property, $value in $properties {
+        #{$property}: $value;
+      }
+    }
+  }
+
+  @each $variant, $properties in $button-variants {
+    &--#{$variant} {
+      background-color: map-get($properties, background);
+      color: map-get($properties, color);
+
+      @include button-hover {
+        background-color: map-get($properties, hover-background);
+      }
+
+      @if $variant == transparent {
+        border-color: currentColor;
+      }
+    }
+  }
+
+  &:disabled {
+    background-color: var(--color-brand);
+    border-color: var(--color-white-transparent);
+    color: var(--color-white);
+    cursor: not-allowed;
+
+    @include button-hover {
+      background-color: var(--color-brand);
+    }
+  }
+}

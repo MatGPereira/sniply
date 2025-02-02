@@ -23,9 +23,9 @@
 //   @include meta.load-css('05-objects');
 // }
 
-// @layer components {
-//   @include meta.load-css('06-components');
-// }
+@layer components {
+  @include meta.load-css('components');
+}
 
 @layer utilities {
   @include meta.load-css('utilities');
