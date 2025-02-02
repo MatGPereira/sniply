@@ -34,7 +34,7 @@ header {
   display: flex;
   inset-inline: 0;
   justify-content: space-between;
-  padding: calc(var(--space-m) * 2) calc(var(--space-m) * 1.5);
+  padding: calc(var(--space-m) * 2) calc(var(--space-m) * 1.25);
   position: fixed;
   top: 0;
 }
