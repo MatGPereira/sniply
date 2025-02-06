@@ -1,10 +1,7 @@
-<script setup lang="ts">
-import Header from '../components/Header.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="l-layout">
-    <Header />
     <slot />
   </div>
 </template>
