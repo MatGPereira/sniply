@@ -5,8 +5,10 @@ import Button from '@/common/presentation/components/Button.vue';
 
 <template>
   <section>
-    <HeroImage />
-    <div>
+    <div class="c-hero-image">
+      <HeroImage />
+    </div>
+    <div class="section-content">
       <h1>More than just shorter links</h1>
       <p>
         Build your brand's recognition and get detailed insight on how your
@@ -19,7 +21,13 @@ import Button from '@/common/presentation/components/Button.vue';
 
 <style scoped lang="scss">
 section {
-  div {
+  margin-bottom: var(--space-5);
+
+  .c-hero-image {
+    text-align: center;
+  }
+
+  .section-content {
     text-align: center;
 
     h1 {
