@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+html {
+  caret-color: var(--color-darken-brand);
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+label {
+  cursor: pointer;
+}
+
+// ==========================================================================
+// Placeholder
+// ==========================================================================
+
+::placeholder {
+  color: var(--color-darken-brand);
+}
+
+// ==========================================================================
+// Calendar
+// ==========================================================================
+
+::-webkit-calendar-picker-indicator {
+  color: var(--color-brand);
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  color: var(--color-brand);
+}

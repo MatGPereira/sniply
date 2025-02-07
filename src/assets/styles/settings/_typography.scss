@@ -8,8 +8,8 @@
     (
       'minWidth': 320,
       'maxWidth': 1440,
-      'minFontSize': 10,
-      'maxFontSize': 32,
+      'minFontSize': 14,
+      'maxFontSize': 16,
       'minTypeScale': 1.2,
       'maxTypeScale': 1.333,
       'positiveSteps': 5,
@@ -22,7 +22,7 @@
   --font-family-poppins: 'Poppins', var(--font-family-sans-serif);
   --font-family-roboto: 'Roboto', var(--font-family-sans-serif);
 
-  --font-size-default: var(--font-step-2);
+  --font-size-default: var(--font-step-0);
   --line-height-default: 1.5;
 
   // @see https://systemfontstack.com/
