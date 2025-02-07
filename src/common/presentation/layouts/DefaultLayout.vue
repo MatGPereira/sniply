@@ -25,6 +25,8 @@ import Header from '../components/Header.vue';
     margin-top: 82px;
     max-height: calc(var(--viewport-min-height, 100vh) - 82px - 76.75px);
     overflow-y: auto;
+    padding-inline: var(--space-1);
+    padding-top: var(--space-2);
   }
 }
 </style>

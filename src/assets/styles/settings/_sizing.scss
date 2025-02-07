@@ -4,7 +4,7 @@
 
 :root {
   @for $i from 1 through 10 {
-    --space-#{$i * 4}: #{math.div(($i * 4), 4)}rem;
+    --space-#{$i}: #{math.div(($i * 4), 4)}rem;
   }
 
   --viewport-max-width: 100dvw;

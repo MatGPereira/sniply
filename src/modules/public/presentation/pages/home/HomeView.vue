@@ -1,55 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroSection from './sections/HeroSection.vue';
+</script>
 
 <template>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
-  <h1>hello</h1>
+  <HeroSection />
 </template>
 
 <style scoped lang="scss"></style>
