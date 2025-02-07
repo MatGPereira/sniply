@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from '@/common/presentation/components/Button.vue';
 import Input from '@/common/presentation/components/Input.vue';
+import FeatureCard from '../components/FeatureCard.vue';
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import Input from '@/common/presentation/components/Input.vue';
           Track how your links are performing across the web our advanced
           statistic dashboard
         </p>
+        <FeatureCard />
       </div>
     </div>
   </section>
