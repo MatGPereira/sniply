@@ -7,6 +7,8 @@
     viewBox="0 0 184 44"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    aria-label="Sniply"
+    role="img"
   >
     <path
       d="M0 22.9565L20 13.3913V32.5217L0 22.9565Z"
