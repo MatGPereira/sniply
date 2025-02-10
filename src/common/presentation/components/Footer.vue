@@ -21,7 +21,7 @@ footer {
   background-color: var(--color-lighten-light-dark);
   border-radius: var(--radius-default) var(--radius-default) 0 0;
   bottom: 0;
-  box-shadow: 0 2px 16px #1a1a1a40;
+  box-shadow: 0 2px 16px var(--color-shadow);
   display: inline-flex;
   inset-inline: 0;
   justify-content: center;

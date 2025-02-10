@@ -15,7 +15,7 @@ import Logo from './Logo.vue';
 header {
   background-color: var(--color-lighten-light-dark);
   border-radius: 0 0 var(--radius-default) var(--radius-default);
-  box-shadow: 0 2px 16px #1a1a1a40;
+  box-shadow: 0 2px 16px var(--color-shadow);
   inset-inline: 0;
   padding: var(--space-1);
   position: fixed;

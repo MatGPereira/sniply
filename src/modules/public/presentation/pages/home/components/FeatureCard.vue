@@ -66,8 +66,9 @@ const cardsContent: ICardsContent[] = [
   article {
     background-color: var(--color-light-dark);
     border-radius: var(--radius-default);
-    box-shadow: 0 2px 16px #1a1a1a40;
-    box-shadow: inset 0 var(--space-4) var(--color-lighten-light-dark);
+    box-shadow:
+      0 2px 16px var(--color-shadow),
+      inset 0 var(--space-4) var(--color-lighten-light-dark);
     padding: var(--space-2) var(--space-1);
     text-align: center;
 
