@@ -31,6 +31,7 @@ import FeatureCard from '../components/FeatureCard.vue';
 section {
   background-color: var(--color-lighten-light-dark);
   box-shadow: inset 0 50px var(--color-light-dark);
+  margin-bottom: var(--space-3);
   margin-inline: calc(-50dvw + 50%);
 
   .section-wrapper {
@@ -52,6 +53,7 @@ section {
 
       p {
         color: var(--color-gray);
+        margin-bottom: var(--space-2);
         padding-block: var(--space-1);
       }
     }

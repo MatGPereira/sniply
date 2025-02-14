@@ -12,6 +12,7 @@ defineProps<IIconProps>();
 
 <template>
   <FontAwesomeIcon
+    v-bind="$attrs"
     :icon="icon"
     :size="size"
   />

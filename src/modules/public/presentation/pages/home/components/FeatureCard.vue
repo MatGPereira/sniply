@@ -42,7 +42,7 @@ const cardsContent: ICardsContent[] = [
       v-for="card in cardsContent"
       :key="card.description"
     >
-      <div>
+      <header>
         <span>
           <Icon
             :icon="card.icon"
@@ -50,7 +50,7 @@ const cardsContent: ICardsContent[] = [
             aria-hidden="true"
           />
         </span>
-      </div>
+      </header>
       <h3>{{ card.title }}</h3>
       <p>{{ card.description }}</p>
     </article>
@@ -61,14 +61,12 @@ const cardsContent: ICardsContent[] = [
 .feature-card-wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: calc(var(--space-1));
+  row-gap: calc(var(--space-2));
 
   article {
     background-color: var(--color-light-dark);
     border-radius: var(--radius-default);
-    box-shadow:
-      0 2px 16px var(--color-shadow),
-      inset 0 var(--space-4) var(--color-lighten-light-dark);
+    box-shadow: 0 2px 16px var(--color-shadow);
     padding: var(--space-2) var(--space-1);
     text-align: center;
 
@@ -77,7 +75,7 @@ const cardsContent: ICardsContent[] = [
       margin-top: calc(var(--space-1) * 1.5);
     }
 
-    div {
+    header {
       align-items: center;
       display: flex;
       justify-content: center;

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CtaSection from './sections/CtaSection.vue';
 import HeroSection from './sections/HeroSection.vue';
 import StatisticsSection from './sections/StatisticsSection.vue';
 </script>
@@ -6,6 +7,7 @@ import StatisticsSection from './sections/StatisticsSection.vue';
 <template>
   <HeroSection />
   <StatisticsSection />
+  <CtaSection />
 </template>
 
 <style scoped lang="scss"></style>
