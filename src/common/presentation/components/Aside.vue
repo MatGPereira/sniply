@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 </script>
 
 <template>
-  <footer>
+  <aside>
     <button type="button">
       <Icon
         class="c-icon"
@@ -12,11 +12,11 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
         size="3x"
       />
     </button>
-  </footer>
+  </aside>
 </template>
 
 <style scoped lang="scss">
-footer {
+aside {
   align-items: center;
   background-color: var(--color-lighten-light-dark);
   border-radius: var(--radius-default) var(--radius-default) 0 0;

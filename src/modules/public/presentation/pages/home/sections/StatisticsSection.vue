@@ -31,10 +31,10 @@ import FeatureCard from '../components/FeatureCard.vue';
 section {
   background-color: var(--color-lighten-light-dark);
   box-shadow: inset 0 50px var(--color-light-dark);
-  margin-bottom: var(--space-3);
-  margin-inline: calc(-50dvw + 50%);
+  margin-inline: calc((-50dvw + (var(--scrollbar-width, 15px) / 2)) + 50%);
 
   .section-wrapper {
+    padding-bottom: var(--space-3);
     padding-inline: var(--space-1);
 
     form {
