@@ -13,10 +13,13 @@ import Button from '@/common/presentation/components/Button.vue';
 
 <style scoped lang="scss">
 section {
+  --_scroll-width-correction: 15px;
+  --_margin-inline-correction: calc((-50dvw + (var(--scrollbar-width, var(--_scroll-width-correction)) / 2)) + 50%);
+
   background: #3b3054 url('@/assets/images/mobile-background-detail.png') repeat
     center center / cover;
   margin-bottom: var(--space-3);
-  margin-inline: calc((-50dvw + (var(--scrollbar-width, 15px) / 2)) + 50%);
+  margin-inline: var(--_margin-inline-correction);
 
   .section-wrapper {
     display: flex;
@@ -28,6 +31,12 @@ section {
     h2 {
       color: var(--color-white);
     }
+  }
+}
+
+@media screen and (375px <= width <= 1280px) {
+  section {
+    --_scroll-width-correction: 0px
   }
 }
 </style>
