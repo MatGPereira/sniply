@@ -5,12 +5,12 @@ interface IButtonProps extends /* @vue-ignore */ ButtonHTMLAttributes {}
 </script>
 
 <script setup lang="ts">
-defineProps<IButtonProps>();
+const props = defineProps<IButtonProps>();
 </script>
 
 <template>
   <button
-    :type="type"
+    :type="props.type"
     v-bind="$attrs"
   >
     <slot />
