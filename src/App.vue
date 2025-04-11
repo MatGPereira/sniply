@@ -1,7 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+
+import DefaultLayout from './common/presentation/layouts/DefaultLayout.vue';
+import { useSetScrollbarWidthFromTag } from './common/presentation/composables/use-get-scrollbar-width';
+
+useSetScrollbarWidthFromTag('main');
+</script>
 
 <template>
-  <h1>Hello, world</h1>
+  <component :is="DefaultLayout">
+    <RouterView />
+  </component>
 </template>
-
-<style scoped></style>

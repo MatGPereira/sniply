@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+
+:root {
+  @for $i from 1 through 10 {
+    --space-#{$i}: #{math.div(($i * 4), 4)}rem;
+  }
+
+  --viewport-max-width: 100dvw;
+  --viewport-min-height: 100dvh;
+
+  --radius-small: calc(var(--radius-default) / 2);
+  --radius-default: 4px;
+  --radius-large: calc(var(--radius-default) * 2);
+  --radius-pill: 50px;
+  --radius-full: 50%;
+}

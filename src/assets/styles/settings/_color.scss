@@ -1,0 +1,37 @@
+@charset 'utf-8';
+
+$raw-light-colors: (
+  brand: '#675cc0',
+  darken-brand: '#5345c9',
+  light-dark: '#fafafa',
+  lighten-light-dark: '#f5f5f5',
+  dark-light: '#1a1a1a',
+  lighten-dark-light: '#2a2a2a',
+  gray: '#acacac',
+  darken-gray: '#676767',
+  disabled: '#7d7d7d59',
+  success: '#20c164',
+  danger: '#f8493c',
+  warn: '#dfec30',
+  white: '#fafafa',
+  shadow: '#1a1a1a40',
+);
+
+$raw-inversion-colors: (
+  light-dark: '#1a1a1a',
+  lighten-light-dark: '#2a2a2a',
+  dark-light: '#fafafa',
+  lighten-dark-light: '#f5f5f5',
+);
+
+:root {
+  @each $color-name, $color-value in $raw-light-colors {
+    --color-#{'' + $color-name}: #{$color-value};
+  }
+}
+
+:root.dark {
+  @each $color-name, $color-value in $raw-inversion-colors {
+    --color-#{'' + $color-name}: #{$color-value};
+  }
+}

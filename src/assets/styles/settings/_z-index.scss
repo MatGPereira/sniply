@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+$z-index-map: (
+  above: 500,
+  modal: 400,
+  overlay: 300,
+  dropdown: 200,
+  default: 1,
+  below: -1,
+);
+
+:root {
+  @each $z-index-name, $z-index-value in $z-index-map {
+    --z-index-#{'' + $z-index-name}: #{$z-index-value};
+  }
+}

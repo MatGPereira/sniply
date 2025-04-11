@@ -1,3 +1,8 @@
 @charset 'utf-8';
 
+@forward './color';
+@forward './sizing';
+@forward './transitions';
+@forward './z-index';
 @forward './typography';
+@forward './breakpoints';
