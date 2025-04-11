@@ -13,8 +13,10 @@ import Button from '@/common/presentation/components/Button.vue';
 
 <style scoped lang="scss">
 section {
-  --_scroll-width-correction: 15px;
-  --_margin-inline-correction: calc((-50dvw + (var(--scrollbar-width, var(--_scroll-width-correction)) / 2)) + 50%);
+  --_scrollbar-width-correction: 15px;
+  --_margin-inline-correction: calc(
+    (-50dvw + (var(--_scrollbar-width-correction) / 2)) + 50%
+  );
 
   background: #3b3054 url('@/assets/images/mobile-background-detail.png') repeat
     center center / cover;
@@ -34,9 +36,9 @@ section {
   }
 }
 
-@media screen and (375px <= width <= 1280px) {
+@media screen and (0px <= width <= 1280px) {
   section {
-    --_scroll-width-correction: 0px
+    --_scrollbar-width-correction: 0px;
   }
 }
 </style>
